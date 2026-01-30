@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details</title>
+    <script src="product.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .product {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .price {
+      font-size: 22px;
+      color: green;
+      font-weight: bold;
+    }
+
+    .availability {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 id="title">Loading...</h1>
+
+    <div class="product">
+      <img id="thumbnail" src="" alt="Product Image">
+
+      <div>
+        <p id="description"></p>
+        <p class="price" id="price"></p>
+        <p class="availability" id="availability"></p>
+
+        <h3>Product Details</h3>
+        <ul id="details"></ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
