@@ -15,11 +15,11 @@ fetch(`https://dummyjson.com/products/${productId}`)
     document.getElementById("availability").innerText = product.available ? "In Stock" : "Out of Stock";
     let details=document.getElementById("details");
     details.innerHTML=`
-    <li>Brand: ${product.brand}</li>
-    <li>Category: ${product.category}</li>
-    <li>Rating: ${product.rating}</li>
-    <li>Stock: ${product.stock}</li>        
-    <li>Discount: ${product.discountPercentage}%</li>
+    <li><b>Brand:</b> ${product.brand}</li>
+    <li><b>Category: </b>${product.category}</li>
+    <li><b>Rating:</b> ${product.rating}</li>
+    <li><b>Stock:</b> ${product.stock}</li>        
+    <li><b>Discount: </b>${product.discountPercentage}%</li>
     <li><b>SKU:</b> ${product.sku}</li>
     <li><b>Weight:</b> ${product.weight} kg</li>
     <li><b>Warranty:</b> ${product.warrantyInformation}</li>
